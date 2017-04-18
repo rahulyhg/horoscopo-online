@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Sign:</strong>
+  <%= @weekly_horoscope.sign_id %>
+</p>
+
+<p>
+  <strong>Initial date:</strong>
+  <%= @weekly_horoscope.initial_date %>
+</p>
+
+<p>
+  <strong>Final date:</strong>
+  <%= @weekly_horoscope.final_date %>
+</p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @weekly_horoscope.text %>
+</p>
+
+<%= link_to 'Edit', edit_weekly_horoscope_path(@weekly_horoscope) %> |
+<%= link_to 'Back', weekly_horoscopes_path %>

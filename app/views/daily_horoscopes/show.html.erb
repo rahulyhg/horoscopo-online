@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @daily_horoscope.date %>
+</p>
+
+<p>
+  <strong>Sign:</strong>
+  <%= @daily_horoscope.sign_id %>
+</p>
+
+<p>
+  <strong>Day of the week:</strong>
+  <%= @daily_horoscope.day_of_the_week %>
+</p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @daily_horoscope.text %>
+</p>
+
+<p>
+  <strong>Color:</strong>
+  <%= @daily_horoscope.color %>
+</p>
+
+<p>
+  <strong>Numbers:</strong>
+  <%= @daily_horoscope.numbers %>
+</p>
+
+<%= link_to 'Edit', edit_daily_horoscope_path(@daily_horoscope) %> |
+<%= link_to 'Back', daily_horoscopes_path %>

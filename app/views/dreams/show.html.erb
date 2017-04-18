@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @dream.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @dream.description %>
+</p>
+
+<p>
+  <strong>Lucky numbers:</strong>
+  <%= @dream.lucky_numbers %>
+</p>
+
+<p>
+  <strong>Animal:</strong>
+  <%= @dream.animal %>
+</p>
+
+<p>
+  <strong>Color:</strong>
+  <%= @dream.color %>
+</p>
+
+<%= link_to 'Edit', edit_dream_path(@dream) %> |
+<%= link_to 'Back', dreams_path %>
