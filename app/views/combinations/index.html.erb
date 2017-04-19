@@ -1,0 +1,47 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Combinations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id sign a</th>
+      <th>Id sign b</th>
+      <th>Love text</th>
+      <th>Love grade</th>
+      <th>Sex text</th>
+      <th>Sex grade</th>
+      <th>Work text</th>
+      <th>Work grade</th>
+      <th>Friendship text</th>
+      <th>Friendship grade</th>
+      <th>Integer</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @combinations.each do |combination| %>
+      <tr>
+        <td><%= combination.id_sign_a %></td>
+        <td><%= combination.id_sign_b %></td>
+        <td><%= combination.love_text %></td>
+        <td><%= combination.love_grade %></td>
+        <td><%= combination.sex_text %></td>
+        <td><%= combination.sex_grade %></td>
+        <td><%= combination.work_text %></td>
+        <td><%= combination.work_grade %></td>
+        <td><%= combination.friendship_text %></td>
+        <td><%= combination.friendship_grade %></td>
+        <td><%= combination.integer %></td>
+        <td><%= link_to 'Show', combination %></td>
+        <td><%= link_to 'Edit', edit_combination_path(combination) %></td>
+        <td><%= link_to 'Destroy', combination, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Combination', new_combination_path %>

@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Sign:</strong>
+  <%= @perfil.sign_id %>
+</p>
+
+<p>
+  <strong>Love text:</strong>
+  <%= @perfil.love_text %>
+</p>
+
+<p>
+  <strong>Sex text:</strong>
+  <%= @perfil.sex_text %>
+</p>
+
+<p>
+  <strong>Family text:</strong>
+  <%= @perfil.family_text %>
+</p>
+
+<p>
+  <strong>Work text:</strong>
+  <%= @perfil.work_text %>
+</p>
+
+<p>
+  <strong>Friendship text:</strong>
+  <%= @perfil.friendship_text %>
+</p>
+
+<%= link_to 'Edit', edit_perfil_path(@perfil) %> |
+<%= link_to 'Back', perfils_path %>

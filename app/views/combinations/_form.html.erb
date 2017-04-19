@@ -1,0 +1,72 @@
+<%= form_for(combination) do |f| %>
+  <% if combination.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(combination.errors.count, "error") %> prohibited this combination from being saved:</h2>
+
+      <ul>
+      <% combination.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :id_sign_a %>
+    <%= f.number_field :id_sign_a %>
+  </div>
+
+  <div class="field">
+    <%= f.label :id_sign_b %>
+    <%= f.number_field :id_sign_b %>
+  </div>
+
+  <div class="field">
+    <%= f.label :love_text %>
+    <%= f.text_field :love_text %>
+  </div>
+
+  <div class="field">
+    <%= f.label :love_grade %>
+    <%= f.number_field :love_grade %>
+  </div>
+
+  <div class="field">
+    <%= f.label :sex_text %>
+    <%= f.text_field :sex_text %>
+  </div>
+
+  <div class="field">
+    <%= f.label :sex_grade %>
+    <%= f.number_field :sex_grade %>
+  </div>
+
+  <div class="field">
+    <%= f.label :work_text %>
+    <%= f.text_field :work_text %>
+  </div>
+
+  <div class="field">
+    <%= f.label :work_grade %>
+    <%= f.number_field :work_grade %>
+  </div>
+
+  <div class="field">
+    <%= f.label :friendship_text %>
+    <%= f.text_field :friendship_text %>
+  </div>
+
+  <div class="field">
+    <%= f.label :friendship_grade %>
+    <%= f.text_field :friendship_grade %>
+  </div>
+
+  <div class="field">
+    <%= f.label :integer %>
+    <%= f.text_field :integer %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

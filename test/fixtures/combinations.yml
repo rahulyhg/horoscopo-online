@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id_sign_a: 1
+  id_sign_b: 1
+  love_text: MyString
+  love_grade: 1
+  sex_text: MyString
+  sex_grade: 1
+  work_text: MyString
+  work_grade: 1
+  friendship_text: MyString
+  friendship_grade: MyString
+  integer: MyString
+
+two:
+  id_sign_a: 1
+  id_sign_b: 1
+  love_text: MyString
+  love_grade: 1
+  sex_text: MyString
+  sex_grade: 1
+  work_text: MyString
+  work_grade: 1
+  friendship_text: MyString
+  friendship_grade: MyString
+  integer: MyString
