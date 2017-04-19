@@ -16,8 +16,6 @@ ActiveRecord::Schema.define(version: 20170418130037) do
   enable_extension "plpgsql"
 
   create_table "combinations", force: :cascade do |t|
-    t.integer  "id_sign_a"
-    t.integer  "id_sign_b"
     t.string   "love_text"
     t.integer  "love_grade"
     t.string   "sex_text"
@@ -64,12 +62,13 @@ ActiveRecord::Schema.define(version: 20170418130037) do
 
   create_table "signs", force: :cascade do |t|
     t.integer  "perfil_id"
+    t.integer  "combination_id"
     t.string   "name"
     t.string   "icon_sign_url"
     t.date     "initial_date"
     t.date     "final_date"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
   end
 
   create_table "weekly_horoscopes", force: :cascade do |t|

@@ -1,6 +1,6 @@
 class Combination < ApplicationRecord
-  validates :id_sign_a, presence: true
-  validates :id_sign_b, presence: true
+  has_many :signs
+
   validates :love_text, presence: true
   validates :love_grade, presence: true
   validates :sex_text, presence: true

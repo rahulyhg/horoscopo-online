@@ -69,6 +69,6 @@ class CombinationsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def combination_params
-      params.require(:combination).permit(:id_sign_a, :id_sign_b, :love_text, :love_grade, :sex_text, :sex_grade, :work_text, :work_grade, :friendship_text, :friendship_grade)
+      params.require(:combination).permit(:love_text, :love_grade, :sex_text, :sex_grade, :work_text, :work_grade, :friendship_text, :friendship_grade)
     end
 end
