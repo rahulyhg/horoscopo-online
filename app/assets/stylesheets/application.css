@@ -13,3 +13,77 @@
  *= require_tree .
  *= require_self
  */
+
+
+.star-header {
+    background: url(../assets/stars-background.jpg) #161a3f top center no-repeat;
+    padding: 0px 0px 25px 0px;
+}
+
+.sign-icon-default{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    margin-right: 6px;
+    width: 65px;
+    height: 65px;
+    display: block;
+}
+
+.logo{
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+    float: left;
+}
+
+.header-border{
+    padding: 20px 50px 20px 50px;
+}
+
+.sign-icon-default:visited{
+    color: #fff;
+}
+
+.sign-icon-default:hover{
+    color: #E73B5C;
+    background: transparent;
+    text-decoration: none;
+}
+
+.logo-text{
+    font-family: icomoon !important;
+    font-style: normal;
+    font-weight: 400;
+    color: #fff;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.navbar{
+    background: transparent;
+    border: transparent;
+}
+
+.navbar-default .navbar-nav>li>a{
+    color: white;
+}
+
+.navbar-default .navbar-nav>li>a:visited{
+    color: white;
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+    color: #E73B5C;
+}
+
+
+.sign-icon{
+    width: 45px;
+    height: 45px;
+    margin-bottom: 5px;
+}
+
+.body-margin{
+    margin: 0px;
+}
