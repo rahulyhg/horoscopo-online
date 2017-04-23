@@ -16,8 +16,15 @@
 
 
 .star-header {
-    background: url(../assets/giphy2.gif) #161A3F center center repeat;
+    background: url(../assets/header-background.gif) #161A3F center center repeat;
     padding: 0px 0px 25px 0px;
+}
+
+@media screen and (max-width: 1200px) {
+    .star-header {
+        background: url(../assets/header-background-small.gif) #161A3F center center repeat;
+        padding: 0px 0px 25px 0px;
+    }
 }
 
 .sign-icon-default{
