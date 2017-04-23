@@ -20,12 +20,6 @@
     padding: 0px 0px 25px 0px;
 }
 
-@media screen and (max-width: 1200px) {
-    .star-header {
-        background: url(../assets/header-background-small.gif) #161A3F center center repeat;
-        padding: 0px 0px 25px 0px;
-    }
-}
 
 .sign-icon-default{
     text-align: center;
@@ -45,7 +39,7 @@
 }
 
 .header-border{
-    padding: 20px 50px 20px 50px;
+    padding: 10px 0px 10px 0px;
 }
 
 .sign-icon-default:visited{
@@ -92,9 +86,21 @@
 }
 
 .body-margin{
-    margin: 0px;
+    margin:0;
 }
 
 .background-color{
     background-color: #F0F0F0;
+}
+
+@media screen and (max-width: 1200px) {
+    .star-header {
+        background: url(../assets/header-background-small.gif) #161A3F center center repeat;
+        padding: 0px 0px 25px 0px;
+    }
+}
+
+.row{
+    margin-right: 0px;
+    margin-left: 0px;
 }
