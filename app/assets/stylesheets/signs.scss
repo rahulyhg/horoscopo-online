@@ -1,3 +1,46 @@
 // Place all the styles related to the Signs controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+#h2{
+  margin: 0px;
+}
+
+.prevision-header{
+  background-color: #8879BA;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 18px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.prevision-header-text{
+  font-size: 28px;
+  font-weight: 300;
+  color: white;
+  margin: 5px;
+
+}
+
+.sign-info-icon{
+  width: 260px;
+  height: 260px;
+}
+
+ul{
+  margin: 0px;
+}
+
+.sign-info-type-text{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.sign-info-date-text{
+  margin-top: -20px;
+  font-size: 16px;
+  font-weight: 100;
+}

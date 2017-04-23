@@ -61,14 +61,12 @@ ActiveRecord::Schema.define(version: 20170418130037) do
   end
 
   create_table "signs", force: :cascade do |t|
-    t.integer  "perfil_id"
-    t.integer  "combination_id"
     t.string   "name"
     t.string   "icon_sign_url"
     t.date     "initial_date"
     t.date     "final_date"
-    t.datetime "created_at",     null: false
-    t.datetime "updated_at",     null: false
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
   end
 
   create_table "weekly_horoscopes", force: :cascade do |t|

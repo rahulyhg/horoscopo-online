@@ -1,34 +1,57 @@
-<p id="notice"><%= notice %></p>
+<div class="row">
 
-<p>
-  <strong>Sign number:</strong>
-  <%= @sign.sign_number %>
-</p>
+  <div class="col-lg-2">
 
-<p>
-  <strong>Perfil:</strong>
-  <%= @sign.perfil_id %>
-</p>
+  </div>
 
-<p>
-  <strong>Name:</strong>
-  <%= @sign.name %>
-</p>
+  <div class="col-lg-8">
 
-<p>
-  <strong>Icon sign url:</strong>
-  <%= @sign.icon_sign_url %>
-</p>
+      <div class="prevision-header">
+        <span class="prevision-header-text">HORÓSCOPO</span>
+      </div>
 
-<p>
-  <strong>Initial date:</strong>
-  <%= @sign.initial_date %>
-</p>
 
-<p>
-  <strong>Final date:</strong>
-  <%= @sign.final_date %>
-</p>
+      <div class="row">
+        <div class="col-lg-4">
+          <%= image_tag("aries-icon.png", :alt => "Aries", :class =>"sign-info-icon") %>
+          <p class="sign-info-type-text">TOURO</p>
+          <p class="sign-info-date-text">21/04 A 20/05</p>
+        </div>
 
-<%= link_to 'Edit', edit_sign_path(@sign) %> |
-<%= link_to 'Back', signs_path %>
+        <div class="col-lg-8">
+        <ul class="nav nav-tabs">
+          <li class="active"><a data-toggle="tab" href="#home">DIA</a></li>
+          <li><a data-toggle="tab" href="#menu1">AMANHÃ</a></li>
+          <li><a data-toggle="tab" href="#menu2">SEMANA</a></li>
+        </ul>
+
+        <div class="tab-content">
+          <div id="home" class="tab-pane fade in active">
+            <p>Previsão de amanhã: 24/04/2017</p>
+            <p> Algumas mudanças na sua rotina podem acabar te irritando hoje. Há chances de se sentir responsável pelos ganhos financeiros ou pelas perdas de outras pessoas. Deixe o orgulho de lado e o serviço vai fluir melhor. Deve enfrentar algumas dificuldades com mãe ou mulher influente na sua vida. Não permita que a indiferença, sua ou do seu par, atrapalhe a relação amorosa. Timidez na paquera. </p>
+            <p>Palpites: 76, 67, 40</p>
+            <p>Cor: Cinza</p>
+          </div>
+          <div id="menu1" class="tab-pane fade">
+            <p>Previsão de amanhã: 24/04/2017</p>
+            <p> Algumas mudanças na sua rotina podem acabar te irritando hoje. Há chances de se sentir responsável pelos ganhos financeiros ou pelas perdas de outras pessoas. Deixe o orgulho de lado e o serviço vai fluir melhor. Deve enfrentar algumas dificuldades com mãe ou mulher influente na sua vida. Não permita que a indiferença, sua ou do seu par, atrapalhe a relação amorosa. Timidez na paquera. </p>
+            <p>Palpites: 76, 67, 40</p>
+            <p>Cor: Cinza</p>
+          </div>
+          <div id="menu2" class="tab-pane fade">
+            <p>Previsão de amanhã: 24/04/2017</p>
+            <p> Algumas mudanças na sua rotina podem acabar te irritando hoje. Há chances de se sentir responsável pelos ganhos financeiros ou pelas perdas de outras pessoas. Deixe o orgulho de lado e o serviço vai fluir melhor. Deve enfrentar algumas dificuldades com mãe ou mulher influente na sua vida. Não permita que a indiferença, sua ou do seu par, atrapalhe a relação amorosa. Timidez na paquera. </p>
+            <p>Palpites: 76, 67, 40</p>
+            <p>Cor: Cinza</p>
+          </div>
+        </div>
+        </div>
+      </div>
+
+  </div>
+
+  <div class="col-lg-2">
+
+  </div>
+
+</div>

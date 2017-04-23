@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+Sign.create(name: 'ARIES',
+icon_sign_url:  'teste',
+initial_date: '20016-11-10',
+final_date: '20016-15-10')

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Horóscopo online</title>
     <%= csrf_meta_tags %>
 
@@ -8,7 +9,7 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body class="body-margin">
+  <body class="body-margin background-color">
   <div class="star-header">
     <div class="header-border">
 
@@ -25,10 +26,11 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="#">
-            <img src="assets/logo.png" class="logo" alt="Logo">
+            <%= image_tag("logo.png", :alt => "Logo", :class =>"logo") %>
             <span class="logo-text">
             HORÓSCOPO ONLINE
             </span>
+          </a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -45,46 +47,45 @@
 
     <div class="row">
         <div class="aries col-lg-1 col-sm-2 col-xs-3">
-          <a href="/horoscopo/aries" class="sign-icon-default"><img src="assets/aries-icon.png" class="sign-icon" alt="Aries"><span>Áries</span></a>
+          <a href="/signs/1" class="sign-icon-default"><%= image_tag("aries-icon.png", :alt => "Aries", :class =>"sign-icon") %><span>Áries</span></a>
         </div>
         <div class="touro col-lg-1 col-sm-2 col-xs-3">
-          <a href="/horoscopo/touro" class="sign-icon-default"><img src="assets/taurus-icon.png" class="sign-icon" alt="Touro"><span>Touro</span></a>
+          <a href="/signs/1" class="sign-icon-default"><%= image_tag("taurus-icon.png", :alt => "Touro", :class =>"sign-icon") %><span>Touro</span></a>
         </div>
         <div class="gemeos col-lg-1 col-sm-2 col-xs-3">
-          <a href="/horoscopo/gemeos" class="sign-icon-default"><img src="assets/gemini-icon.png" class="sign-icon" alt="Gemeos"><span>Gêmeos</span></a>
+          <a href="/signs/1" class="sign-icon-default"><%= image_tag("gemini-icon.png", :alt => "Gemeos", :class =>"sign-icon") %><span>Gêmeos</span></a>
         </div>
         <div class="cancer col-lg-1 col-sm-2 col-xs-3">
-          <a href="/horoscopo/cancer" class="sign-icon-default"><img src="assets/cancer-icon.png" class="sign-icon" alt="Cancer"><span>Câncer</span></a>
+          <a href="/signs/1" class="sign-icon-default"><%= image_tag("cancer-icon.png", :alt => "Cancer", :class =>"sign-icon") %><span>Câncer</span></a>
         </div>
         <div class="leao col-lg-1 col-sm-2 col-xs-3">
-          <a href="/horoscopo/leao" class="sign-icon-default"><img src="assets/leo-icon.png" class="sign-icon" alt="Leao"><span>Leão</span></a>
+          <a href="/signs/1" class="sign-icon-default"><%= image_tag("leo-icon.png", :alt => "Leão", :class =>"sign-icon") %><span>Leão</span></a>
         </div>
         <div class="virgem col-lg-1 col-sm-2 col-xs-3">
-          <a href="/horoscopo/virgem" class="sign-icon-default"><img src="assets/virgo-icon.png" class="sign-icon" alt="Virgem"><span>Virgem</span></a>
+          <a href="/signs/1" class="sign-icon-default"><%= image_tag("virgo-icon.png", :alt => "Virgem", :class =>"sign-icon") %><span>Virgem</span></a>
         </div>
         <div class="libra col-lg-1 col-sm-2 col-xs-3">
-          <a href="/horoscopo/libra" class="sign-icon-default"><img src="assets/libra-icon.png" class="sign-icon" alt="Libra"><span>Libra</span></a>
+          <a href="/signs/1" class="sign-icon-default"><%= image_tag("libra-icon.png", :alt => "Libra", :class =>"sign-icon") %><span>Libra</span></a>
         </div>
         <div class="escorpiao col-lg-1 col-sm-2 col-xs-3">
-          <a href="/horoscopo/escorpiao" class="sign-icon-default"><img src="assets/scorpion-icon.png" class="sign-icon" alt="Escorpiao"><span>Escorpião</span></a>
+          <a href="/signs/1" class="sign-icon-default"><%= image_tag("scorpion-icon.png", :alt => "Escorpião", :class =>"sign-icon") %><span>Escorpião</span></a>
         </div>
         <div class="sagitario col-lg-1 col-sm-2 col-xs-3">
-          <a href="/horoscopo/sagitario" class="sign-icon-default"><img src="assets/sagitarius-icon.png" class="sign-icon" alt="Sagitario"><span>Sagitário</span></a>
+          <a href="/signs/1" class="sign-icon-default"><%= image_tag("sagitarius-icon.png", :alt => "Sagitario", :class =>"sign-icon") %><span>Sagitário</span></a>
         </div>
         <div class="capricornio col-lg-1 col-sm-2 col-xs-3">
-          <a href="/horoscopo/capricornio" class="sign-icon-default"><img src="assets/capricorn-icon.png" class="sign-icon" alt="Capricornio"><span>Capricórnio</span></a>
+          <a href="/signs/1" class="sign-icon-default"><%= image_tag("capricorn-icon.png", :alt => "Capricornio", :class =>"sign-icon") %><span>Capricórnio</span></a>
         </div>
         <div class="aquario col-lg-1 col-sm-2 col-xs-3">
-          <a href="/horoscopo/aquario" class="sign-icon-default"><img src="assets/aquarius-icon.png" class="sign-icon"" alt="Aquario"><span>Aquário</span></a>
+          <a href="/signs/1" class="sign-icon-default"><%= image_tag("aquarius-icon.png", :alt => "Aquario", :class =>"sign-icon") %><span>Aquário</span></a>
         </div>
         <div class="peixes col-lg-1 col-sm-2 col-xs-3">
-          <a href="/horoscopo/peixes" class="sign-icon-default"><img src="assets/pisces-icon.png" class="sign-icon" alt="Peixes"><span>Peixes</span></a>
+          <a href="/signs/1" class="sign-icon-default"><%= image_tag("pisces-icon.png", :alt => "Peixes", :class =>"sign-icon") %><span>Peixes</span></a>
         </div>
     </div>
     </div>
 
   </div>
-
 
     <%= yield %>
   </body>

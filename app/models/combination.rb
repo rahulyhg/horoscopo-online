@@ -1,5 +1,5 @@
 class Combination < ApplicationRecord
-  has_many :signs
+  has_and_belongs_to_many :signs
 
   validates :love_text, presence: true
   validates :love_grade, presence: true

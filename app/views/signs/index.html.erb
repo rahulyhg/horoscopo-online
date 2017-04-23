@@ -5,8 +5,6 @@
 <table>
   <thead>
     <tr>
-      <th>Sign number</th>
-      <th>Perfil</th>
       <th>Name</th>
       <th>Icon sign url</th>
       <th>Initial date</th>
@@ -18,8 +16,6 @@
   <tbody>
     <% @signs.each do |sign| %>
       <tr>
-        <td><%= sign.sign_number %></td>
-        <td><%= sign.perfil_id %></td>
         <td><%= sign.name %></td>
         <td><%= sign.icon_sign_url %></td>
         <td><%= sign.initial_date %></td>

@@ -69,6 +69,6 @@ class SignsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def sign_params
-      params.require(:sign).permit(:combination_id,:perfil_id, :name, :icon_sign_url, :initial_date, :final_date)
+      params.require(:sign).permit(:combination_id, :name, :icon_sign_url, :initial_date, :final_date)
     end
 end
