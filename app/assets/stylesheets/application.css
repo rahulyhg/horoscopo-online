@@ -110,3 +110,14 @@
     margin-right: 0px;
     margin-left: 0px;
 }
+
+.footer{
+    margin-top: 50px;
+    background-color: #3E2177;
+    height: 110px;
+}
+.logo-footer{
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+}

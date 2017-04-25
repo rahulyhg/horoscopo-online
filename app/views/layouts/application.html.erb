@@ -7,6 +7,7 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="https://use.fontawesome.com/82809a3f4f.js"></script>
   </head>
 
   <body class="body-margin background-color">
@@ -88,5 +89,34 @@
   </div>
 
     <%= yield %>
+
+
+
+
+  <div class="footer">
+
+    <div class="row">
+      <div class="col-lg-4">
+        <div style="margin-top: 40px; margin-left: 20px;">
+        <%= image_tag("logo.png", :alt => "Logo", :class =>"logo-footer") %>
+        <span class="logo-text">
+            HORÓSCOPO ONLINE
+            </span>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <p style="font-size: 11px; color: white; margin-top: 50px; text-align: center">Copyrights – Horóscopo Online - Política de Privacidade</p>
+      </div>
+      <div class="col-lg-4">
+        <i class="fa fa-facebook fa-3x" aria-hidden="true" style="margin-left: 145px;"></i>
+        <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
+        <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
+      </div>
+    </div>
+  </div>
+
+
+
+
   </body>
 </html>
