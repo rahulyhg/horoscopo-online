@@ -114,10 +114,26 @@
 .footer{
     margin-top: 50px;
     background-color: #3E2177;
-    height: 110px;
+    height: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .logo-footer{
     width: 45px;
     height: 45px;
     margin-right: 10px;
 }
+
+.navbar-default .navbar-collapse{
+    border-color: transparent;
+}
+
+
+   .center-block {
+       display: table;
+       margin: auto;
+   }
+
+   .text-center {
+       text-align:center
+   }
